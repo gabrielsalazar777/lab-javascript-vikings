@@ -74,7 +74,6 @@ class War {
 //         }
 //         return attack;
 //     }
-//     return attack;
 //   }
 
   vikingAttack(){
@@ -87,9 +86,9 @@ class War {
       this.saxonArmy.splice(randomSaxon, 1);
 
     }
-    // let result = combat(viking);
-    // return result;
     return attack;
+    // let result = combat('viking');
+    // return result;
   }
   saxonAttack(){
     let randomViking = Math.floor(Math.random() * this.vikingArmy.length);
@@ -111,8 +110,6 @@ class War {
     } else if (!this.vikingArmy.length){
       return `Saxons have fought for their lives and survived another day...`
     }
-    else {
       return "Vikings and Saxons are still in the thick of battle."
-    }
   };
 }
